@@ -11,7 +11,7 @@ const app = () => {
       resizeMode="cover"
       style={styles.image}
       >
-      <Text style={styles.text}>Explore</Text>
+      <Text style={styles.text}>Contact Us</Text>
       </ImageBackground>
     </View>
   )
