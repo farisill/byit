@@ -1,17 +1,17 @@
 import { View, Text, StyleSheet, ImageBackground} from 'react-native'
 import React from 'react'
 
-import exploreCoffeeImg from "@/assets/images/explore-coffee.png"
+import icedCoffeeImg from "@/assets/images/iced-coffee.png"
 
 const app = () => {
   return (
     <View style={styles.container}>
       <ImageBackground
-      source={exploreCoffeeImg}
+      source={icedCoffeeImg}
       resizeMode="cover"
       style={styles.image}
       >
-      <Text style={styles.text}>Explore</Text>
+      <Text style={styles.text}>Coffee Shop</Text>
       </ImageBackground>
     </View>
   )
@@ -22,6 +22,7 @@ export default app
 const styles = StyleSheet.create({
   container: {
     flex: 1,
+    marginTop: 14,
     flexDirection: 'column',
   },
   image: {
