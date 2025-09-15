@@ -1,26 +1,30 @@
-import { View, Text, StyleSheet, ImageBackground, Pressable} from 'react-native'
-import React from 'react'
-import { Link }  from 'expo-router'
+import { Link, Stack } from 'expo-router';
+import { StyleSheet, Pressable, Text, View, ImageBackground } from 'react-native';
 
-import exploreCoffeeImg from "@/assets/images/explore-coffee.png"
+import icedCoffeeImg from "@/assets/images/spilled-coffee.png"
+
+import { ThemedText } from '@/components/themed-text';
+import { ThemedView } from '@/components/themed-view';
 
 const app = () => {
   return (
+
     <View style={styles.container}>
       <ImageBackground
-      source={exploreCoffeeImg}
+      source={icedCoffeeImg}
       resizeMode="cover"
-      style={styles.image}
-      >
-      <Text style={styles.title}>Contact Us</Text>
-
-      <Link style={{ marginHorizontal: 'auto'}} href="/" asChild>
+      style={styles.image}>
+        <Text type="title" style={styles.title}>This screen doens't exist.</Text>
+        <Link style={{ marginHorizontal: 'auto'}} href="/" asChild>
         <Pressable style={styles.button}>
           <Text style={styles.buttonText}>Back Home</Text>
         </Pressable>
       </Link>
       </ImageBackground>
+
+
     </View>
+
   )
 }
 
