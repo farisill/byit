@@ -9,7 +9,7 @@ import { ThemedView } from '@/components/themed-view';
 const app = () => {
   return (
 
-    <View style={styles.container}>
+    <View style={styles.container}> 
       <ImageBackground
       source={icedCoffeeImg}
       resizeMode="cover"
