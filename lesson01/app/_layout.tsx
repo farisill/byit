@@ -15,10 +15,12 @@ export default function RootLayout() {
   return (
     <ThemeProvider value={colorScheme === 'dark' ? DarkTheme : DefaultTheme}>
       <Stack>
-        {/* <Stack.Screen name="(tabs)" options={{ headerShown: false }} /> */}
-        <Stack.Screen name="index" options={{ title: "Home"}} />
-        <Stack.Screen name="contact" options={{ title: "Contact Us"}} />
-        <Stack.Screen name="modal" options={{ presentation: 'modal', title: 'Modal' }} />
+      <Stack.Screen name="(tabs)" options={{ headerShown: false }} />
+      {/* <Stack.Screen name="(coffee)" options={{ headerShown: false }} /> */}
+      {/* <Stack.Screen name="index" options={{ title: "Home", headerShown: false}} />
+      <Stack.Screen name="contact" options={{ title: "Contact Us", headerShown: false}} />
+      <Stack.Screen name="modal" options={{ presentation: 'modal', title: 'Modal' }} />
+      <Stack.Screen name="+not-found" options={{ title: "Not Found", headerShown: false}} /> */}
       </Stack>
       <StatusBar style="auto" />
     </ThemeProvider>
