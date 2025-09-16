@@ -14,8 +14,8 @@ export default function RootLayout() {
       <Stack screenOptions={{ headerStyle: { backgroundColor: theme.headerBackground}, headerTintColor: theme.text, headerShadowVisible: false }}>  
 
       <Stack.Screen name="index" options={{ title: 'Home', headerShown: false}} />
-      <Stack.Screen name="contact" options={{ title: 'Contact', headerTitle: 'Contact Us', headerShown: true, title: 'Home'}} />
-      <Stack.Screen name="menu" options={{ title: 'Menu', headerTitle: 'Coffee Shop Menu', headerShown: true, title: 'Home'}} />
+      <Stack.Screen name="contact" options={{ title: 'Contact', headerTitle: 'Contact Us', headerShown: true }} />
+      <Stack.Screen name="menu" options={{ title: 'Menu', headerTitle: 'Coffee Shop Menu', headerShown: true }} />
       <Stack.Screen name="+not-found" options={{ headerShown: false }} />
       </Stack>
       // <StatusBar style="auto" />
