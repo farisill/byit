@@ -16,7 +16,7 @@ export default function MenuScreen() {
     const separatorComp = <View style={styles.separator}/>
 
     // const headerComp = <Text>Top Of List</Text>
-    const footerComp = <Text>End Of List</Text>
+    const footerComp = <Text style={{ color: theme.text }}>End Of List</Text>
 
     return (
         <Container>
@@ -56,7 +56,7 @@ function createStyles(theme, colorScheme) {
             backgroundColor: theme.background,
         },
         separator: {
-            height: 10 ,
+            height: 1,
             backgroundColor: colorScheme === 'dark' ? 'papayawhip' : "#000",
             width: '50%',
             maxWidth: 300,
@@ -94,6 +94,10 @@ function createStyles(theme, colorScheme) {
         },
         menuItemText: {
             color: theme.text,
-        }
+        },
+                menuImage: {
+            width: 100,
+            height: 100,
+        },
     })
 }
